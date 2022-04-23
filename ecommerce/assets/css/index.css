@@ -1,0 +1,271 @@
+/* estilos basicos de la pagina  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(52, 88, 189);
+    
+}
+h1{
+    text-align: center;
+    color: #fff;
+}
+h2{
+    font-size: 2rem;
+}
+h4{
+    font-size: 16px;
+    font-weight: 700;
+}
+header{
+    padding: 20px 0 0 0;
+    text-align: center;
+    background-color: rgb(153, 74, 227);
+    width: 100%;
+    height: 60px;
+}
+ 
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+/* el logo  */
+.nav-logo{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    bottom: 8.5px;
+}
+/* final logo  */
+
+/* moviendo el carrito y los enlaces del carrito  */
+.two .submenu{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    bottom: 40px;    
+}
+/* espaciado de las letras del carrito  */
+.two .submenu thead th{
+    /* background-color: red; */
+    padding-left: 2rem;
+}
+/* estilos del submenu  */
+.submenu{
+    position: relative;
+}
+.submenu #carrito{
+    display: none;
+}
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right: 0;
+    color: #fff;
+    top: 100%;
+    z-index: 1;
+    background-color: #2A2420;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
+
+
+/* moviendo los enlaces hacia las demas ventanas  */
+/* alinineando enlaces uno al lado del  otro  */
+.row-anidado ul{
+    position: relative;
+    display: flex;
+    margin: 0 15%;
+    bottom: 4rem;
+    
+}
+.row-anidado ul li a{
+    padding-left: 2rem;
+} 
+
+/* quitadno lo puntos por defecto  */
+.navct {
+    list-style: none;
+}
+.navct a{
+    text-decoration: none;
+}
+/* seccion de la imagen y  buscador  */
+/* IDE HERO  */
+#hero{
+    background-image: url(/assets/img/hero.jpg);
+    position: relative;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+}
+/* efectro en la imagen  */
+#hero::before{
+    content: "";
+    background: rgba(143, 121, 121, 0.45);
+    position: absolute;
+    top: 0; 
+    min-height: 100%;
+    left: 0;
+    right: 0;
+}
+/* estilos del titulo e input dentro de hero  */
+/* moviendo el titulo pide cafe y el input  */
+.contenido-hero {
+    position: absolute;
+    padding-top: 120px;
+    margin-top: 80px;
+    color: white;
+    
+}
+.contenido-hero form{
+    position: relative;
+    margin-bottom: 0;
+    left: 15px;
+}
+/* este es el espaciado de las letras en el buscador  */
+.contenido-hero h2 ,p{
+    padding: 20px;
+    text-align: start;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.contenido-hero form #buscador{
+    height: 50px;
+    margin-bottom: 0;
+}
+/* estilos finales del titulo y buscador  */
+.contenido-hero form .submit-buscador{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 0;
+    display: block;
+    text-indent: -9999px;
+    width: 150px;
+    background-image: url(/assets/img/lupa.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    border: none;
+}
+.contenido-hero input{
+    width: 500px;
+    top: 0;
+    background-color: #fff;
+}
+/*COREGIR EL DEFECTO EN LA BARRA DE BUSQUEDA*/
+
+
+/* ESTILLOS DE LAS MARCAS */
+/* BARRA DE COLOR CON TEXTO */
+.barra{
+    padding: 20px 0;
+    background: rgb(155, 74, 231);
+}
+.barra p{
+    margin: 0;
+    color: #fff;
+}
+/* colocando los elementos uno al lado del otro  */
+.barra .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+
+/* estilos de la seccion de pedidos en linea  */
+#encabezado{
+    margin: 30px auto;
+    
+}
+
+
+
+/* ESTILOS DE LA SECCION DE LOS PEDIDOS EN LINEA creadno las
+cartas co los productos */
+/* ---------alineando los elementos uno al lado del otro con grid------------- */
+#lista-cafe div.row{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+}
+#lista-cafe .row {
+    margin-bottom: 20px;
+} 
+
+.agregar-carrito{
+    margin: 10px 0;
+}
+
+.card{
+    text-align: center;
+    box-shadow: 0 25px 9px 0 rgb(0 0 0 / 3%);
+    background: #5fad89;
+    width: 16.5rem;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+/* @media (min-width: 550px) {
+    .card {
+        text-align: left;
+    }
+} */
+.info-card{
+    padding: 10px 20px;
+    color: #fff;
+}
+.info-card p,
+.card h4{
+    margin-bottom: 5px;
+}
+.info-card .precio{
+    text-decoration: line-through;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* dando estilo al bottom de agregar al carrito  */
+
+
+
+
+/* .container-pedidos .four .card div.infor-card img {
+    position: relative;
+
+}
+.container-pedidos .four .card div.infor-card {
+    background-color: red;
+    
+    top: 0;
+    /* display: inline; */
+    /* width: 16.5rem;
+    height: 15rem;
+    margin-bottom: 10rem;
+    
+} */ 
+
+/* .container-pedidos .four .card div.infor-card ,h4 ,p, img, a{
+    color: #fff;
+    
+} */
+
+/* ESTILOS DE LA SECCION DE LOS PEDIDOS EN LINEA  */
+
+/* .container-pedidos .four div.card{
+    display: grid;
+    margin: auto;
+    width: 120vh;
+    height: 80vh;
+    gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+} */

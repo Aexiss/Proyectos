@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First version of ecommerce</title>
+                    <!-- NORMALIZE CSS  -->
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+                    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/index.css">
+                    <!-- RESPONSIVE DESING  -->
+    <link rel="stylesheet" href="#">
+                    <!-- CUSTOM CSS  -->
+    <link rel="stylesheet" href="/assets/css/custom.css">
+                    <!-- FONT AWESOME  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+                    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+                    <!-- FONTS AWESOME-->
+    <script src="https://kit.fontawesome.com/24204aae0f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- cabecera de la  pagina, menu de navegacion  -->
+    <header id="header" class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="nav-logo">
+                        <img src="/assets/img/logo.png" alt="" id="logo">
+                    </div>
+                    <div class="two columns u-pull-right">
+                        <ul>
+                            <li class="submenu"> 
+                                <img src="/assets/img/cart.png" alt="" id="img-carrito">
+                                <div id="carrito">
+                                    <table id="lista-carrito" class="u-full-width">
+                                        <thead>
+                                            <th>imagen</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                            <th></th>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+                                    <a href="#" id="vaciar-carrito" class="button u-full-width">vaciar carrito</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row-anidado">
+                        <div class="enlaces-column">
+                            <ul class="navct">
+                                <li class="enlaces-columns"><a href="#">inicio</a></li>
+                                <li class="enlaces-columns"><a href="#">sobre</a></li>
+                                <li class="enlaces-columns"><a href="#">contacto</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <!-- final del header  -->
+    <!-- |||||||||||||||||||||||||||||||||||| -->
+    <!-- seccion de la busqueda de la pagina -->
+    <div id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="six-colums">
+                    <div class="contenido-hero">
+                        <h2>Pide tu cafe favorito</h2>
+                        <p>Todos los cafes a 15$</p>
+                        <form action="#" id="busqueda" method="post" class="formulario">
+                            <input class="u-full-widht" type="text" placeholder="que te gustaria comprar" id="buscador">
+                            <input type="butmit" id="sutmid-buscador" class="submit-buscador">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contienedor  del input con el buscador  -->
+    <!-- |||||||||||||||||||||||||||||||||||| -->
+    <!-- |||||||||||||||||||||||||||||||||||| -->
+    <!-- |||||||||||||||||||||||||||||||||||| -->
+    <!-- seccion de la barra  -->
+    <div class="barra">
+        <div class="row">
+            <div class="four columns icono icono1">
+                <p>200 Maracas de cafes<br>
+                    explora los sabores mas
+                </p>
+            </div>
+            <div class="four columns icono icono2">
+                <p>expertos en cafes<br>
+                    explora los dstintos sabores
+                </p>
+            </div>
+            <div class="four columns icono icono3">
+                <p>grano de calidad<br>
+                    100% natural
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- seccion de los pedidos  -->
+    <!-- |||||||||||||||||||||||||||||||||||| -->
+    <!-- |||||||||||||||||||||||||||||||||||| -->
+    <!-- |||||||||||||||||||||||||||||||||||| -->
+    <div id="lista-cafe" class="container-pedidos">
+        <h1 id="encabezado" class="encabezado">PEDIDOS EN LINEA</h1>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="/assets//img/coffee1.jpg" class="u-full-width">
+                    <div class="info-card">
+                        <h4>cafe negro</h4>
+                        <p>marca nesca</p>
+                        <img src="/assets/img/estrellas.png" >
+                        <p class="precio">$200 <span class="u-pull-rigth">$15</span></p>
+                        <a href="#" class=" u-full-width button-primary button input agregar-carrito ">
+                            agregar al carrito 
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="/assets//img/coffee2.jpg" class="u-full-width">
+                    <div class="info-card">
+                        <h4>cafe negro</h4>
+                        <p>marca nesca</p>
+                        <img src="/assets/img/estrellas.png" >
+                        <p class="precio">$200 <span class="u-pull-rigth">$15</span></p>
+                        <a href="#" class=" u-full-width button-primary button input agregar-carrito ">
+                            agregar al carrito 
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="/assets//img/coffee3.jpg" class="u-full-width">
+                    <div class="info-card">
+                        <h4>cafe negro</h4>
+                        <p>marca nesca</p>
+                        <img src="/assets/img/estrellas.png" >
+                        <p class="precio">$200 <span class="u-pull-rigth">$15</span></p>
+                        <a href="#" class=" u-full-width button-primary button input agregar-carrito ">
+                            agregar al carrito 
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- |||||||||||||||||||||||||||||||||||| -->
+    <!-- |||||||||||||||||||||||||||||||||||| -->
+    <!-- |||||||||||||||||||||||||||||||||||| -->
+    
+
+
+
+
+
+
+
+
+
+</body>
+</html>
